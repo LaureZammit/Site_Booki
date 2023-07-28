@@ -1,0 +1,682 @@
+/*---------- GENERAL ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Raleway', serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+:root {
+    --color-blue: #0065FC;
+    --color-light-blue: #DEEBFF;
+    --color-grey: #D9D9D9;
+    --color-light-grey: #F2F2F2;
+}
+/* ----------------------------END GENERAL----------------------------- */
+
+
+/*---------- HEADER ----------*/
+header {
+    margin: auto;
+    max-width: 1440px;
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo {
+    width: 61px;
+    padding: 30px;
+}
+
+header nav {
+    align-self: center;
+    padding: 0 25px;
+}
+
+nav ul {
+   padding: 15px 0 0 0;
+   list-style: none;
+   display: flex;
+   gap: 68px;
+   font-weight: 400;
+   font-size: 16px;
+}
+
+nav li:hover a{
+    color: var(--color-blue);
+    padding: 15px 0 0 0;
+    transition: all 0.2s ease;
+    border-top: 2px solid var(--color-blue);
+}
+/* -----------------------------END HEADER------------------------------ */
+
+/*---------- MAIN ----------*/
+/* SECTION SELECTION */
+main {
+    padding: 30px;
+}
+
+.selection {
+    margin: auto;
+    max-width: 1440px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.selection p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+/* ------FORM------ */
+.form-searchbar {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 35px;
+}
+
+.form-searchbar input, .button-bg-grey {
+    border: none;
+    text-align: center;
+    padding: 15px;
+    height: 15px;
+}
+
+.form-searchbar button{
+    padding: 12px;
+}
+
+.search-loupe {
+    display: none;
+}
+
+.form-searchbar i {
+    font-size: 16px!important;
+    padding: 15px;
+}
+
+.form-searchbar input {
+    border: 1px solid var(--color-light-grey);
+}
+
+.form-searchbar input::placeholder {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.button-bg-grey {
+    background-color: var(--color-light-grey);
+    border: 1px solid var(--color-light-grey);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.button-bg-blue {
+    background-color: var(--color-blue);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid var(--color-blue);
+    border-radius: 0px 15px 15px 0px;
+}
+
+.form-searchbar i {
+    background-color: var(--color-light-grey);
+    font-size: 10px;
+}
+
+.form-searchbar i, .form-searchbar form {
+    border: 1px solid var(--color-light-grey);
+}
+
+/* ------FILTER------ */
+.filter-h3 {
+    display: flex;
+    gap: 10px;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter-p {
+    align-self: center;
+}
+
+.filter > h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filter button {
+    display: flex;
+    gap: 10px;
+    border: 2px solid var(--color-light-grey);
+    border-radius: 25px;
+    background-color: #FFF;
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    padding-top: 10px;
+    margin-left: 40px;
+}
+
+.filter button:hover {
+    background-color: var(--color-light-blue);
+    transition: all 0.2s ease;
+    border: 2px solid var(--color-grey);
+}
+
+.filter button {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.filter button i {
+    color: var(--color-blue);
+}
+
+.selection .info .fa-info {
+    width: 14px;
+    border: 2px solid var(var(--color-light-grey));
+    border-radius: 50px;
+    padding: 8px;
+    color: var(--color-blue);
+    margin-right: 12px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.filter-info-i {
+    color: var(--color-blue);
+}
+
+.info {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+/* SECTION HEBERGEMENTS */
+
+#accommodation {
+    display: grid;
+    grid-template-columns: 67% auto;
+    gap: 30px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* ------LEFT------ */
+
+.accomodation-article h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.accomodation-article {
+    border-radius: 15px;
+}
+
+.grid-container-accomodation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: auto;
+    margin: 20px 20px;
+}
+
+.accomodation-hotel {
+    background-color: #FFF;
+    padding: 5px;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.accomodation-article, .accomodation-aside {
+    background-color: var(--color-light-grey);
+}
+
+.accomodation-hotel img {
+    width: 100%;
+    height: 184px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.view-more {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding-left: 25px;
+} 
+
+/* ------RIGHT------ */
+
+.fa-chart-line {
+    color: var(--color-blue);
+    align-self: center;
+}
+
+.fa-star {
+    color: var(--color-blue);
+}
+
+.white {
+    color: var(--color-light-grey);
+}
+
+.accomodation-aside {
+    border-radius: 15px;
+}
+
+.accomodation-aside-title {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.accomodation-aside-title h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding-left: 25px;
+}
+
+.accomodation-hotel-populaire {
+    background-color: #FFF;
+    padding: 5px;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.accomodation-hotel-populaire img {
+    width: 100%;
+    height: 154px;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+.grid-container-accomodation-aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 20px 20px;
+}
+
+.accomodation-hotel-populaire a {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* SECTION ACTIVITES */
+#activity {
+    max-width: 1440px;
+    margin: auto;
+    padding: 100px 30px 30px 30px;
+}
+
+#activity h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.grid-activity {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    justify-content: space-between;
+    grid-gap: 30px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.grid-activity article {
+    border: 1px solid var(--color-light-grey);
+    border-radius: 20px;
+    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
+    margin: auto;
+    height: 100%;
+}
+
+.activity-img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.grid-activity h3 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 19px 20px 19px;
+}
+
+/* -----------------------------END MAIN-------------------------------- */
+
+/*---------- FOOTER ----------*/
+footer {
+    background-color: var(--color-light-grey);
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+footer li {
+    margin-bottom: 18px;
+}
+
+footer h2 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/*---------- END FOOTER ----------*/
+
+
+@media screen and (max-width:1024px) {
+
+/*---------- MAIN TAB ----------*/
+
+/* SECTION SELECTION TAB */
+h1 {
+    margin-bottom: 5px;
+}
+/* END SECTION SELECTION TAB */
+
+/* ------FILTER TAB------ */
+.filter-h3 {
+    display: block;
+    gap: 10px;
+}
+
+.filter-p {
+    margin-bottom: 25px;
+}
+
+.filter {
+    display: flex;
+}
+
+.filter button {
+    margin: 0 25px 0 0;
+    font-size: 16px;
+}
+
+/* ------END FILTER TAB------ */
+
+/* SECTION HEBERGEMENTS TAB */
+
+#accommodation {
+    display: block;
+}
+
+/* ------LEFT------ */
+.accomodation-hotel img {
+    width: 100%;
+    height: 124px;
+}
+
+.accomodation-hotel h3, .accomodation-hotel p, .accomodation-hotel i {
+    margin: 5px 10px;
+}
+
+.accomodation-article {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+/* ------RIGHT------ */
+
+.grid-container-accomodation-aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 30px;
+}
+
+.accomodation-hotel-populaire h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.accomodation-hotel-populaire p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+/* ----END SECTION HEBERGEMENTS TAB---- */
+
+/* SECTION ACTIVITES */
+
+.activity-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-activity h3 {
+    padding: 20px 19px 15px 19px;
+}
+
+/* -----------------------------END MAIN TAB-------------------------------- */
+
+/*---------- FOOTER TAB ----------*/
+
+footer {
+    max-width: 924px;
+    margin: auto;
+    padding: 30px;
+}
+/*---------- END FOOTER TAB ----------*/
+
+}
+
+
+/* -----------------MOBILE-------------------------------- */
+@media screen and (min-width:320px) and (max-width:768px){
+/*---------- HEADER ----------*/
+header nav a {
+    width: 100%;
+    display: block;
+}
+
+header {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header nav {
+    padding: 0;
+}
+
+nav ul {
+    padding: 15px 0 0 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+}
+
+nav li:hover a{
+    color: var(--color-blue);
+    padding: 0 0 15px 0;
+    transition: all 0.2s ease;
+    border-top: none;
+    border-bottom: 2px solid var(--color-blue);
+}
+/* -----------------------------END HEADER------------------------------ */
+/* 
+
+/*---------- MAIN ----------*/
+/* SECTION SELECTION */
+.selection {
+    margin-top: 20px;
+}
+
+/* ------FORM------ */
+.form-searchbar {
+    justify-content: center;
+}
+
+.form-searchbar button{
+    margin: 0;
+}
+
+.button-bg-blue .fa-magnifying-glass {
+    background-color: var(--color-blue);
+    border: none;
+    padding: 0;
+}
+
+.search-text {
+    display: none;
+}
+
+.search-loupe {
+    display: inline;
+}
+
+.button-bg-blue {
+    border-radius: 15px;
+    box-shadow: 1px 5px 2px var(--color-grey);
+}
+
+/* ------FILTER------ */
+.filter {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.filter button {
+    font-size: 14px;
+    font-weight: 700;
+    width: 160px;
+    justify-content: left;
+    padding-left: 20px;
+}
+
+/* SECTION HEBERGEMENTS */
+
+#accommodation {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* ------RIGHT------ */
+.accomodation-aside {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+.grid-container-accomodation-aside {
+    display: block;
+}
+
+.accomodation-hotel-populaire {
+    margin-bottom: 15px;
+}
+
+.accomodation-hotel-populaire img {
+    height: 146px;
+}
+
+/* ------LEFT------ */
+.accomodation-article {
+    border-radius: 0;
+    background-color: #FFF;
+}
+
+.grid-container-accomodation {
+    display: block;
+    height: auto;
+    margin: 20px 20px;
+}
+
+.accomodation-hotel {
+    margin-bottom: 25px;
+}
+
+.fa-solid .fa-star {
+    margin: 0;
+    padding: 0;
+}
+
+/* SECTION ACTIVITES */
+.grid-activity {
+    display: block;
+    margin-bottom: 25px;
+}
+
+.grid-activity article {
+    margin-bottom: 25px;
+}
+/* -----------------------------END MAIN-------------------------------- */
+
+/*---------- FOOTER ----------*/
+
+footer {
+    display: block;
+    padding: 70px;
+}
+
+footer article {
+    margin-bottom: 50px;
+}
+
+footer li {
+    margin-bottom: 16px;
+}
+/*---------- END FOOTER ----------*/
+}
