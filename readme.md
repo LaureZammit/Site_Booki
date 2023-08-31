@@ -38,7 +38,7 @@ Laure Zammit
 ## Contact
 Laure Zammit - laurezammit@gmail.com
 
-Project Link: [https://github.com/LaureZammit/Pokedex.git](https://github.com/LaureZammit/Pokedex.git)
+Project Link: [https://github.com/LaureZammit/Site_Booki.git](https://github.com/LaureZammit/Site_Booki.git)
 
 ## Remerciements
 
