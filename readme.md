@@ -5,7 +5,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <div align="center">
-  <a href="https://laurezammit.github.io/Pokedex-Tkinter/">
+  <a href="https://laurezammit.github.io/Site_Booki/">
     <img src="img/logo/Booki.png" alt="Logo Booki" width="180">
   </a>
 </div>
